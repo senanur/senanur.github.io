@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KalC</title>
+</head>
+
+<body>
+    <form>
+        <input type="number" class="pemilih-dpt pemilih-laki" id="pemilih-dpt-laki" name="pemilih-dpt-laki" onblur="hitungJumlah('pemilih-dpt', 'pemilih-dpt-total')">
+        <input type="number" class="pemilih-dpt pemilih-perempuan" id="pemilih-dpt-perempuan" name="pemilih-dpt-perempuan" onblur="hitungJumlah('pemilih-dpt', 'pemilih-dpt-total')">
+        <input type="number" id="pemilih-dpt-total" name="pemilih-dpt-total" readonly> <br><br>
+
+        <input type="number" class="pemilih-dptb pemilih-laki" id="pemilih-dptb-laki" name="pemilih-dptb-laki" onblur="findTotalDPTb()">
+        <input type="number" class="pemilih-dptb pemilih-perempuan" id="pemilih-dptb-perempuan" name="pemilih-dptb-perempuan" onblur="findTotalDPTb()">
+        <input type="number" id="pemilih-dptb-total" name="pemilih-dptb-total" readonly> <br><br>
+
+        <input type="number" class="pemilih-dpk pemilih-laki" id="pemilih-dpk-laki" name="pemilih-dpk-laki" onblur="findTotalDPK()">
+        <input type="number" class="pemilih-dpk pemilih-perempuan" id="pemilih-dpk-perempuan" name="pemilih-dpk-perempuan" onblur="findTotalDPK()">
+        <input type="number" id="pemilih-dpk-total" name="pemilih-dpk-total" readonly> <br><br>
+
+        <input type="number" class="pemilih pemilih-laki" id="total-pemilih-laki" name="total-pemilih-laki" onblur="findTotalPemilih()" readonly>
+        <input type="number" class="pemilih pemilih-perempuan" id="total-pemilih-perempuan" name="total-pemilih-perempuan" onblur="findTotalPemilih()" readonly>
+        <input type="number" id="pemilih-total" name="pemilih-total" readonly> <br><br>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
